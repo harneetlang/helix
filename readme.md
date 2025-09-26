@@ -1,3 +1,6 @@
+as of Sep 26, 2025 , this is not working. Any help is well appreciated
+for docs visit - docs.harneetlang.com
+
 # Harneet Language Support for Helix
 
 This folder contains Helix configuration, a Tree-sitter grammar scaffold, and a theme for the Harneet programming language (`.ha`).
