@@ -1,5 +1,5 @@
 as of Sep 26, 2025 , this is not working. Any help is well appreciated
-for docs visit - docs.harneetlang.com
+for docs visit - [docs.harneetlang.com](docs.harneetlang.com)
 
 # Harneet Language Support for Helix
 
