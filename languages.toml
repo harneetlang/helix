@@ -1,0 +1,24 @@
+# Harneet language support for Helix
+# Note: Helix uses Tree-sitter for syntax highlighting. This minimal config
+# associates .ha files and sets comments. For full highlighting, we will add
+# a Tree-sitter grammar later.
+
+[[language]]
+name = "harneet"
+scope = "source.harneet"
+file-types = ["ha"]
+comment-token = "//"
+block-comment-tokens = ["/*", "*/"]
+indent = { tab-width = 4, unit = "    " }
+# Link to the grammar by name
+grammar = "harneet"
+# No language server yet
+
+# Basic injection examples (no effect until a grammar exists)
+# [[language.injection]]
+# language = "harneet"
+# scopes = ["source.harneet"]
+
+[[grammar]]
+name = "harneet"
+source = { path = "./tree-sitter-harneet" }

@@ -1,0 +1,75 @@
+# Harneet theme for Helix (dark)
+# This theme defines colors for general syntax groups. Full language-specific
+# highlighting requires a Tree-sitter grammar for Harneet.
+
+[palette]
+background = "#0f1419"
+foreground = "#d0d0d0"
+muted      = "#8a8f98"
+blue       = "#6cb6ff"
+cyan       = "#56c8d8"
+teal       = "#5fb3b3"
+green      = "#8ec07c"
+yellow     = "#e5c07b"
+orange     = "#d19a66"
+red        = "#e06c75"
+purple     = "#c678dd"
+magenta    = "#ff79c6"
+
+[ui]
+# Editor
+background = { bg = "background" }
+text       = { fg = "foreground" }
+
+# Gutter and line numbers
+virtual        = { fg = "muted" }
+menu           = { fg = "foreground", bg = "#12181f" }
+menu.selected  = { fg = "foreground", bg = "#1b2230" }
+
+# Statusline
+statusline           = { fg = "foreground", bg = "#12181f" }
+statusline.inactive  = { fg = "muted", bg = "#12181f" }
+
+# Cursorline & selection
+cursorline = { bg = "#131a22" }
+selection  = { bg = "#203040" }
+
+# Diagnostics
+diagnostic.error = { fg = "red" }
+diagnostic.warn  = { fg = "yellow" }
+diagnostic.info  = { fg = "blue" }
+diagnostic.hint  = { fg = "teal" }
+
+# Search and gutters
+search.match   = { bg = "#3a3f4b", fg = "foreground" }
+gutter         = { fg = "muted", bg = "#0f1419" }
+
+[syntax]
+comment       = { fg = "muted", modifiers = ["italic"] }
+constant      = { fg = "orange" }
+constant.numeric = { fg = "orange" }
+string        = { fg = "green" }
+string.special = { fg = "teal" }
+escape        = { fg = "teal" }
+keyword       = { fg = "purple" }
+keyword.control = { fg = "purple", modifiers = ["bold"] }
+keyword.storage = { fg = "purple" }
+operator      = { fg = "cyan" }
+punctuation   = { fg = "muted" }
+function      = { fg = "blue" }
+function.method = { fg = "blue" }
+constructor   = { fg = "blue" }
+label         = { fg = "yellow" }
+namespace     = { fg = "cyan" }
+type          = { fg = "yellow" }
+type.builtin  = { fg = "yellow", modifiers = ["bold"] }
+variable      = { fg = "foreground" }
+variable.builtin = { fg = "magenta" }
+property      = { fg = "foreground" }
+macro         = { fg = "magenta" }
+attribute     = { fg = "teal" }
+
+# Diff
+diff.plus  = { fg = "green" }
+diff.minus = { fg = "red" }
+diff.delta = { fg = "blue" }
